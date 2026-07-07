@@ -13,7 +13,7 @@ venv/
 
 # ---------- node / vite ----------
 node_modules/
-frontend/dist/
+# frontend/dist is committed so the deploy platform only needs Python
 npm-debug.log*
 yarn-error.log*
 

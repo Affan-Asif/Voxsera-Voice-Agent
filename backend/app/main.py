@@ -56,3 +56,14 @@ async def live(ws: WebSocket):
         pass
     finally:
         LIVE_CLIENTS.discard(ws)
+
+
+# ---- production: serve the built React app (frontend/dist) ----
+# API routes and websockets above take priority; everything else gets the SPA.
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+
+_DIST = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
+if _DIST.exists():
+    app.mount("/", StaticFiles(directory=_DIST, html=True), name="spa")
+    print(f"serving frontend from {_DIST}")
