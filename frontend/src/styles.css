@@ -1,0 +1,13 @@
+/* Base tweaks on top of Tailwind (loaded via CDN in index.html) */
+
+* { box-sizing: border-box; }
+html, body, #root { min-height: 100vh; margin: 0; }
+
+/* slim dark scrollbars */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* range slider thumb polish */
+input[type="range"] { height: 4px; }

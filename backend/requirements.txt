@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+httpx
+websockets
+twilio
+google-generativeai
+vaderSentiment
+supabase
+google-auth
+google-auth-oauthlib
+google-api-python-client
+tzdata
+python-multipart
+pypdf

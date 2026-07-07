@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voxsera — AI Voice Agents for SMBs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+            colors: {
+              /* Voxsera identity: monochrome silver — elegant, editorial, no tint */
+              brand: {
+                300: "#ffffff", 400: "#f4f4f5", 500: "#d4d4d8",
+                600: "#a1a1aa", 700: "#71717a", 950: "#141416",
+              },
+              violet: {
+                300: "#e4e4e7", 400: "#a1a1aa", 500: "#71717a",
+                600: "#52525b", 700: "#3f3f46", 950: "#101012",
+              },
+              fuchsia: {
+                300: "#fafafa", 400: "#e4e4e7", 500: "#a1a1aa", 600: "#71717a",
+              },
+              indigo: {
+                400: "#f4f4f5", 500: "#d4d4d8", 600: "#a1a1aa", 950: "#0e0e10",
+              },
+              /* neutralize the blue undertone of slate app-wide */
+              slate: {
+                300: "#d4d4d8", 400: "#a1a1aa", 500: "#71717a",
+                600: "#52525b", 700: "#2e2e33", 800: "#1f1f23",
+                900: "#141417", 950: "#09090b",
+              },
+            },
+            keyframes: {
+              pulseDot: { "0%,100%": { opacity: 1 }, "50%": { opacity: 0.35 } },
+            },
+            animation: { pulseDot: "pulseDot 1.6s ease-in-out infinite" },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-200 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
