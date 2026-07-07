@@ -13,3 +13,5 @@ google-api-python-client
 tzdata
 python-multipart
 pypdf
+# audioop was removed from the stdlib in Python 3.13 — backport just in case
+audioop-lts; python_version >= "3.13"
