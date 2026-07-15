@@ -1,5 +1,5 @@
 # AI Voice Agent Platform
-# LIVE DEMO: https://voxsera-voice-agent-production.up.railway.app/
+LIVE DEMO: https://voxsera-voice-agent-production.up.railway.app/
 
 An AI-powered voice receptionist platform for SMBs. Businesses can configure a custom AI persona and voice, connect Google Calendar and Google Sheets, and receive a Twilio phone number answered by a low-latency, full-duplex AI voice agent with barge-in support. Powered by Gemini for reasoning and function calling, Deepgram and Sarvam AI for speech processing, the agent schedules appointments, checks availability, updates Google Sheets, makes automated reminder calls 30 minutes before appointments, and stores transcripts, sentiment, and call history in Supabase, all through a React dashboard.
 
